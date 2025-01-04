@@ -32,7 +32,7 @@ void sequentialTranspose(int n, int m, std::vector<std::vector<int>>& matrix, st
         }
     }
 }
-
+```cpp
 ## 2. Parallel Implementation (Using OpenMP)
 The OpenMP parallelization improves the execution by dividing the task of matrix transposition among multiple threads.
 
@@ -51,7 +51,8 @@ void parallelTranspose(int n, int m, std::vector<std::vector<int>>& matrix, std:
     }
 }
 
-Performance Results
+```cpp
+### Performance Results
 We ran our tests on various matrix sizes to measure the performance differences between sequential and parallel implementations. Here are the execution times for different matrix sizes:
 
 For a 512 x 512 matrix:
@@ -119,7 +120,7 @@ parallel_transpose.cpp: C++ code implementing the parallel matrix transposition 
 block_based_transpose.cpp: C++ code implementing the optimized block-based parallel matrix transposition.
 result.csv: Contains the execution time results for performance comparison.
 README.md: This documentation file.
-Copy code
+
 
 
 
