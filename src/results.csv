@@ -1,0 +1,7 @@
+# Matrix Transposition Performance Results
+# This file contains execution time measurements for sequential and parallel matrix transposition.
+
+Matrix Size,Sequential Time (ms),Parallel Time (ms),Speedup
+512 x 512,12,5,2.4
+1024 x 1024,50,18,2.78
+2048 x 2048,220,72,3.05
