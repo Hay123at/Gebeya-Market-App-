@@ -19,6 +19,7 @@ We evaluate these approaches by measuring execution times and calculating speedu
 
 The sequential method iterates through each matrix element and transposes it in a single thread. This is a simple and intuitive approach, but less efficient for large matrices.
 
+```cpp 
 
 #include <iostream>
 #include <vector>
@@ -32,9 +33,11 @@ void sequentialTranspose(int n, int m, std::vector<std::vector<int>>& matrix, st
         }
     }
 }
+```
 2. Parallel Implementation (Using OpenMP)
 The OpenMP parallelization improves the execution by dividing the task of matrix transposition among multiple threads.
 
+```cpp
 #include <omp.h>
 #include <vector>
 
@@ -48,7 +51,7 @@ void parallelTranspose(int n, int m, std::vector<std::vector<int>>& matrix, std:
         }
     }
 }
-
+```
 
 ### Performance Results
 We ran our tests on various matrix sizes to measure the performance differences between sequential and parallel implementations. Here are the execution times for different matrix sizes:
